@@ -1,0 +1,48 @@
+ body {
+    background-color: rgb(11, 13, 18);
+ }
+
+ .list {
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    img{
+        height: 200px;
+        width: 100%;
+    }
+    background-color: rgb(16, 20, 27);
+    gap: 10px;
+    padding-top: 10px;
+    
+
+}    
+
+.counter-title {
+    text-align: center;
+}
+
+.counter-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.content-wraper {
+    color: rgb(214, 162, 16);
+    padding-top: 15px;
+    background-color: rgb(16, 20, 27);
+    padding: 17px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    h1 {
+        border-bottom: 0.5px solid #ffffff17;
+    }
+    
+}
+
+/* Увеличение изображений при наведении */
+.list img:hover {
+    transform: rotate(2deg); /* Увеличиваем изображение в 1.2 раза */
+    cursor: pointer; /* Меняем курсор на указатель */
+}
